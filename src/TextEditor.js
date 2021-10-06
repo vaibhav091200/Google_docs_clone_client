@@ -25,7 +25,7 @@ export default function TextEditor() {
   console.log(documentId);
 
   useEffect(() => {
-    const s = io("https://server-google.herokuapp.com/");
+    const s = io("/");
     setSocket(s);
     return () => {
       s.disconnect();
